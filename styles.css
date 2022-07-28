@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    background: url(img/pinkmountain.jpg) no-repeat center fixed;
+    background-size: cover;
+    background-color: pink;
+    background-position: center;
+}
+.header {
+    height: 10vh;
+    background-color: bisque;
+}
+.nav-wrapper {
+    background-color: black;
+    display: inline;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: stretch;
+    
+}
+.li {
+    display: inline;
+    padding: 10px;
+    background-color:black; 
+    
+}
+
+i.fa-brands {
+    padding: 15px;
+    font-size: large;
+    
+}
+.main-container {
+    height: 100vh; 
+    overflow-y: scroll;
+
+ }
+.container1 {
+    border:1px; 
+    border-color: black;
+    border-left-width: 2px;
+    border-right-width: 2 px;
+    
+}
+.container2 {
+    border:1px; 
+    border-color: black;
+    border-left-width: 2px;
+    border-right-width: 2 px;
+    
+}
+.ul { 
+    position:fixed
+    top: 0; 
+    width: 100%;  
+
+}

@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-       Christina Hines 
-    </title>
-   
-    <script src="https://kit.fontawesome.com/58b7d71216.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christina Hines Portfolio</title>
 
-    <link rel="stylesheet" href="styles.css"> 
- </head> 
- 
- <body>
-   <!---header--->
-        <div class="nav-wrapper">
-      
-         <ul>
-            <li><a href="default.asp">Home</a></li>
-            <li><a href="Aboutme.asp">About Me</a></li>
-            <li><a href="Resume.asp">Resume</a></li>
-            <li><a href="Portfolio.asp">Portfolio</a></li>
-            <li><a href="chatwithme.asp">Chat with Me</a></li>
-         </ul>
+    <script
+      src="https://kit.fontawesome.com/58b7d71216.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-         <i class="fa-brands fa-facebook-f"></i>
-         <i class="fa-brands fa-instagram-square"></i>
-         <i class="fa-brands fa-twitter-square"></i>
+  <body>
+    <div class="header">
+        <div class="social-links">
+          <a href="https://github.com/christina732" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/christina-hines-11833622b/"
+            target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" target="_blank">
+            <i class="fa-thin fa-paper-plane"></i>
+          </a>
         </div>
-
-        
-  <div class="header">
-   <h1> Christina Hines </h1>
-  </div>
-   
-   <!---main section--->
-   
-   </div>
-      <div class="main-container">
-         <div class="container1">
-            <title> About Me</title>
-            <p> Hello! My name is Christina Hines. </p>
-         </div>
-         <div class="container2">
-            <title> Resume</title>
-            <p> Resume Will Go here </p>
-         </div>
-         <div class="container3">
-            <title> Portfolio</title>
-            <p> Portfolio Projects </p>
-   
-
-         </div>
-         <div class="container4">
-            <Title> Chat with Me</Title>
-            <p> Chat with Me</p>
-            <div class="contact form">
-
-
-            </div>
-         </div>
       </div>
+      <div class="nav-wrapper">
+         <nav id="navbar">
 
-     </div>
- 
-   
-   <!---footer---> 
-   <footer class= "footer-container"> 
-      <div>
-      
-
+            <div class="nav-link">
+               <a id="menu">
+                  <a href="Aboutme.html">ABOUT ME</a>
+               </div>
+            <div class="nav-link">
+               <a href="Resume.html">RESUME</a>
+            </div>
+            <div class="nav-link">
+               <a href="Portfolio.html">PORTFOLIO</a>
+            </div>
+            <div class="nav-link">
+               <a href="Contact.html">CONTACT</a>
+            </div>
+         </nav>
          </div>
-         </footer>
- </body>
+      <div class="name">
 
- </html>
+         <h1> Christina Hines </h1>
+      </div>
+   </div>
+    <!---main section--->
+    <div class="main-container">
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolores perspiciatis, ipsa incidunt et eveniet cum accusamus! Ipsa est quidem in! Cumque ullam laborum quos fugit nesciunt placeat? Repellat, quis! Nulla ullam fugit sequi, laudantium natus similique ut consequuntur repudiandae! Nostrum impedit, nisi aliquid eos distinctio officiis, doloremque optio ipsam aspernatur exercitationem atque sapiente hic laudantium, consequatur veritatis at aut.</p>
+      <p class="text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ad quidem pariatur ratione sunt! Alias ducimus repudiandae sunt deleniti tenetur libero nam at hic deserunt. Labore facilis voluptatem quaerat numquam! </p>
+    </div>
+      <!---footer--->
+    <footer class="footer-container">
+      <div>
+        <p></p>
+      </div>
+    </footer>
+    <script>
+      var navbar = document.getElementbyId ("navbar");
+      var menu = document.getElementbyId ("menu");
 
+      window.onscroll = function ( ) {
+         if (window.pageYoffset >= menu.offsetTop){
+            navbar.classlist.add ("sticky"); 
+         }
+         else {
+            navbar.claslist.remove("sticky");
+         }
+      }
+    </script>
+  </body>
+</html>
